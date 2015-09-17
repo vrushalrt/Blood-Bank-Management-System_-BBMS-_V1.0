@@ -1,0 +1,28 @@
+If txtdid.Text = "" Then
+    MsgBox "*DonarID Field Requird!", vbCritical
+    End If
+If txtfname.Text = "" Then
+    MsgBox "*FirstName Field Required!", vbCritical
+   End If
+ If txtlname.Text = "" Then
+    MsgBox "*LastName Field Required!", vbCritical
+    End If
+If txtaddress.Text = "" Then
+    MsgBox "*Address Field Required!", vbCritical
+    End If
+If txtzip.Text = "" Then
+    MsgBox "*ZipCode Field Required!", vbCritical
+    End If
+If txtphno.Text = "" Then
+    MsgBox "*Phone no. field mandatory!", vbCritical
+    End If
+If txtphno.Text = "" Then
+    MsgBox "*Address Field Required!", vbCritical
+    Else
+    If lblage.Caption <= 18 Then
+        'MsgBox "Sorry Donar is Under AGE", vbOKOnly
+               Else
+        Adodc1.Recordset.AddNew
+        MsgBox "New Donar added successfully.", vbInformation
+    End If
+End If
